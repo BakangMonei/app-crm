@@ -48,9 +48,7 @@ export type NotificationsQuery = {
       Pick<
         Types.Audit,
         "id" | "action" | "targetEntity" | "targetId" | "createdAt"
-      > & {
-        user?: Types.Maybe<Pick<Types.User, "id" | "name" | "avatarUrl">>;
-      }
+      > & { user?: Types.Maybe<Pick<Types.User, "id" | "name" | "avatarUrl">> }
     >;
   };
 };
@@ -90,9 +88,7 @@ export type CompaniesSelectQueryVariables = Types.Exact<{
 }>;
 
 export type CompaniesSelectQuery = {
-  companies: {
-    nodes: Array<Pick<Types.Company, "id" | "name" | "avatarUrl">>;
-  };
+  companies: { nodes: Array<Pick<Types.Company, "id" | "name" | "avatarUrl">> };
 };
 
 export type ContactsSelectQueryVariables = Types.Exact<{
@@ -102,9 +98,7 @@ export type ContactsSelectQueryVariables = Types.Exact<{
 }>;
 
 export type ContactsSelectQuery = {
-  contacts: {
-    nodes: Array<Pick<Types.Contact, "id" | "name" | "avatarUrl">>;
-  };
+  contacts: { nodes: Array<Pick<Types.Contact, "id" | "name" | "avatarUrl">> };
 };
 
 export type DealStagesSelectQueryVariables = Types.Exact<{

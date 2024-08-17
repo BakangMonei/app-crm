@@ -272,6 +272,7 @@ const App: React.FC = () => {
                     }
                   >
                     <Route path="/login" element={<LoginPage />} />
+                    {/* <Route path="/login" element={<DashboardPage />} /> */}
                     <Route path="/register" element={<RegisterPage />} />
                     <Route
                       path="/forgot-password"
